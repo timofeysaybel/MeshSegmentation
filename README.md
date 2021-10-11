@@ -1,4 +1,4 @@
-# MeshSegmentation
+# Mesh Segmentation
 
 ## Basic definition of mesh segmentation problem:
 
