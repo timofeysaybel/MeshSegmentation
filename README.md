@@ -23,12 +23,8 @@ Let M be a 3D boundary-mesh, and S the set of mesh elements which is either V ,E
 
 References: 
 [Segmentation and Shape Extraction of 3D Boundary Meshes](https://github.com/timofeysaybel/MeshSegmentation/files/7322933/Segmentation.and.Shape.Extraction.of.3D.Boundary.Meshes.pdf), 
-
 [Graph cut based mesh segmentation using feature
 points and geodesic distance](https://github.com/timofeysaybel/MeshSegmentation/files/7322936/Graph.cut.based.mesh.segmentation.using.feature.points.and.geodesic.distance.pdf), 
-
 [Hierarchical Mesh Decomposition using Fuzzy Clustering and Cuts](https://github.com/timofeysaybel/MeshSegmentation/files/7322938/Hierarchical.Mesh.Decomposition.using.Fuzzy.Clustering.and.Cuts.pdf), 
-
 [Interactive Graph Cuts for Optimal Boundary & Region Segmentation of Objects in N-D Images.](https://github.com/timofeysaybel/MeshSegmentation/files/7322939/Interactive.Graph.Cuts.for.Optimal.Boundary.Region.Segmentation.of.Objects.in.N-D.Images.pdf).
-
 
