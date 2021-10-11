@@ -28,7 +28,21 @@ References:
 
 [Hierarchical Mesh Decomposition using Fuzzy Clustering and Cuts](https://github.com/timofeysaybel/MeshSegmentation/files/7322938/Hierarchical.Mesh.Decomposition.using.Fuzzy.Clustering.and.Cuts.pdf), 
 
-[Interactive Graph Cuts for Optimal Boundary & Region Segmentation of Objects in N-D Images.](https://github.com/timofeysaybel/MeshSegmentation/files/7322939/Interactive.Graph.Cuts.for.Optimal.Boundary.Region.Segmentation.of.Objects.in.N-D.Images.pdf).
+[Interactive Graph Cuts for Optimal Boundary & Region Segmentation of Objects in N-D Images](https://github.com/timofeysaybel/MeshSegmentation/files/7322939/Interactive.Graph.Cuts.for.Optimal.Boundary.Region.Segmentation.of.Objects.in.N-D.Images.pdf).
 
 
 ### Algorithm
+
+
+
+## Graph cut
+
+Reference:
+[Segmentation and Shape Extraction of 3D Boundary Meshes](https://github.com/timofeysaybel/MeshSegmentation/files/7323103/Segmentation.and.Shape.Extraction.of.3D.Boundary.Meshes.pdf),
+
+[A fast and eﬃcient mesh segmentation method based on
+improved region growing](https://github.com/timofeysaybel/MeshSegmentation/files/7323108/A.fast.and.e.cient.mesh.segmentation.method.based.on.improved.region.growing.pdf)
+
+
+### Algorithm
+
