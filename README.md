@@ -7,7 +7,7 @@ Let M be a 3D boundary-mesh, and S the set of mesh elements which is either V ,E
 ![ProcessOfSegmentation](https://user-images.githubusercontent.com/64921559/136804832-459d4cea-d97f-4742-ad1f-6594a26d4ab3.jpg)
 
 
-## Algoritms:
+## Algorithms:
   1) Graph-Cut techniques
 
   2) Region Growing
