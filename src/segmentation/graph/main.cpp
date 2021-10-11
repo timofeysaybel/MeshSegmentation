@@ -47,10 +47,8 @@ int main(int argc, char **argv)
 
     graph.decompose(delta);
 
-    MeshWriter::writeOff(argv[2], mesh);
-
     Mesh newMesh = graph.getMesh();
-    MeshWriter::writeOff("../g.off", newMesh);
+    MeshWriter::writeOff(argv[2], newMesh);
 
     cout << "Saved" << endl;
 
