@@ -33,7 +33,10 @@ References:
 
 ### Algorithm
 
-
+  1. Assigning distances to all pairs of faces in the mesh.
+  2. After computing an initial decomposition, assigning each face a probability of belonging to each patch.
+  3. Computing a fuzzy decomposition by refining the probability values using an iterative clustering scheme.
+  4. Constructing the exact boundaries between the components, thus transforming the fuzzy decomposition into the final one.
 
 ## Region growing
 
