@@ -20,3 +20,4 @@ Let M be a 3D boundary-mesh, and S the set of mesh elements which is either V ,E
 
 ## Graph cut
 
+Reference: [10.1.1.15.146.pdf](https://github.com/timofeysaybel/MeshSegmentation/files/7322902/10.1.1.15.146.pdf)
