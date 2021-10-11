@@ -6,14 +6,18 @@
 #define MESHSEGMENTATION_VERTEX_H
 
 
+#include "Point.h"
+
 class Vertex
 {
 public:
-    double x[3]{};
+    Point p;
 
     Vertex() = default;
 
     Vertex(double xx, double y, double z);
+
+    Vertex(const Vertex& an);
 };
 
 

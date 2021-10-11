@@ -3,3 +3,10 @@
 //
 
 #include "../../include/model/Mesh.h"
+
+Mesh::Mesh(const Mesh &an)
+{
+    faces = an.faces;
+    vertices = an.vertices;
+    edges = an.edges;
+}

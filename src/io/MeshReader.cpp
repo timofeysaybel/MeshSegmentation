@@ -19,12 +19,12 @@ Mesh MeshReader::readOff(const std::string& filename)
     while(line == "OFF" || line.empty() || line[0] == '#')
         getline(file, line);
 
-    cout << "Read the title" << endl;
+    cout << "\tRead the title" << endl;
     auto tmp = split(line, " ");
     int vSize = stoi(tmp[0]);
     int fSize = stoi(tmp[1]);
 
-    cout << "Read the first line and got amount of vertices and faces: " << vSize << " " << fSize << endl;
+    cout << "\tRead the first line and got amount of vertices and faces: " << vSize << " " << fSize << endl;
     Mesh result;
     result.vertices.resize(vSize);
     result.faces.resize(fSize);
@@ -36,16 +36,22 @@ Mesh MeshReader::readOff(const std::string& filename)
         result.vertices[i] = Vertex(stod(tmp[0]), stod(tmp[1]), stod(tmp[2]));
     }
 
-    cout << "Read all vertices" << endl;
+    cout << "\tRead all vertices" << endl;
 
     for (int i = 0; i < fSize; i++)
     {
         getline(file, line);
         tmp = split(line, " ");
         result.faces[i] = Face(stoi(tmp[1]), stoi(tmp[2]), stoi(tmp[3]));
+        Edge e12(stoi(tmp[1]), stoi(tmp[2]));
+        Edge e23(stoi(tmp[2]), stoi(tmp[3]));
+        Edge e31(stoi(tmp[3]), stoi(tmp[1]));
+        result.edges.push_back(e12);
+        result.edges.push_back(e23);
+        result.edges.push_back(e31);
     }
 
-    cout << "Read all faces" << endl;
+    cout << "\tRead all faces" << endl;
 
     return result;
 }

@@ -9,12 +9,18 @@
 
 #include "Face.h"
 #include "Vertex.h"
+#include "Edge.h"
 
 class Mesh
 {
 public:
     std::vector<Face> faces;
     std::vector<Vertex> vertices;
+    std::vector<Edge> edges;
+
+    Mesh() = default;
+
+    Mesh(const Mesh& an);
 };
 
 
