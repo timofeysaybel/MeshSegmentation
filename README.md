@@ -38,7 +38,7 @@ References:
   3. Computing a fuzzy decomposition by refining the probability values using an iterative clustering scheme.
   4. Constructing the exact boundaries between the components, thus transforming the fuzzy decomposition into the final one.
 
-Computational complexity: O($F^{2}logF), F - faces.
+Computational complexity: O(F^2logF), F - faces.
 
 ## Region growing
 
