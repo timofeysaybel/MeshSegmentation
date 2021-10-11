@@ -20,4 +20,10 @@ Let M be a 3D boundary-mesh, and S the set of mesh elements which is either V ,E
 
 ## Graph cut
 
-Reference: [10.1.1.15.146.pdf](https://github.com/timofeysaybel/MeshSegmentation/files/7322902/10.1.1.15.146.pdf)
+Reference: [Segmentation and Shape Extraction of 3D Boundary Meshes.pdf](https://github.com/timofeysaybel/MeshSegmentation/files/7322933/Segmentation.and.Shape.Extraction.of.3D.Boundary.Meshes.pdf), [Graph cut based mesh segmentation using feature
+points and geodesic distance.pdf](https://github.com/timofeysaybel/MeshSegmentation/files/7322936/Graph.cut.based.mesh.segmentation.using.feature.points.and.geodesic.distance.pdf), 
+[Hierarchical Mesh Decomposition using Fuzzy Clustering and Cuts.pdf](https://github.com/timofeysaybel/MeshSegmentation/files/7322938/Hierarchical.Mesh.Decomposition.using.Fuzzy.Clustering.and.Cuts.pdf), 
+[Interactive Graph Cuts
+for Optimal Boundary & Region Segmentation of Objects in N-D Images.pdf](https://github.com/timofeysaybel/MeshSegmentation/files/7322939/Interactive.Graph.Cuts.for.Optimal.Boundary.Region.Segmentation.of.Objects.in.N-D.Images.pdf).
+
+
