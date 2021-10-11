@@ -35,7 +35,7 @@ References:
 
 
 
-## Graph cut
+## Region growing
 
 Reference:
 [Segmentation and Shape Extraction of 3D Boundary Meshes](https://github.com/timofeysaybel/MeshSegmentation/files/7323103/Segmentation.and.Shape.Extraction.of.3D.Boundary.Meshes.pdf),
