@@ -42,6 +42,9 @@ Computational complexity: O(F^2logF), F - faces.
 
 ## Region growing
 
+![CodevRuDME4](https://user-images.githubusercontent.com/64921559/136807392-af47ab47-7039-421c-a66e-98463fc9f3c2.jpg)
+
+
 Reference:
 [Segmentation and Shape Extraction of 3D Boundary Meshes](https://github.com/timofeysaybel/MeshSegmentation/files/7323103/Segmentation.and.Shape.Extraction.of.3D.Boundary.Meshes.pdf),
 
