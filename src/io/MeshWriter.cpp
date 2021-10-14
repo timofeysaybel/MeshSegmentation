@@ -22,7 +22,7 @@ void MeshWriter::writeOff(const string& filename, const Mesh& mesh)
 
     for (auto &f : mesh.faces)
     {
-        file << "3 " << f.vertices[0] << " " << f.vertices[1] << " " << f.vertices[2] << " ";
+        file << "3 " << f.indices.x << " " << f.indices.y << " " << f.indices.z << " ";
         file << 60 * (f.label % 4 + 1) << " " << 80 * ((f.label + 1) % 3 + 1) << " " << 50 * ((f.label + 2) % 5 + 1) << endl;
     }
 }

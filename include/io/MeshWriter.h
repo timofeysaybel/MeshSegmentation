@@ -12,6 +12,7 @@
 class MeshWriter
 {
 public:
+    /** Save mesh in filename.off */
     static void writeOff(const std::string& filename, const Mesh& mesh);
 };
 

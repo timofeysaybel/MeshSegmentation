@@ -42,13 +42,8 @@ Mesh MeshReader::readOff(const std::string& filename)
     {
         getline(file, line);
         tmp = split(line, " ");
-        result.faces[i] = Face(stoi(tmp[1]), stoi(tmp[2]), stoi(tmp[3]));
-        Edge e12(stoi(tmp[1]), stoi(tmp[2]));
-        Edge e23(stoi(tmp[2]), stoi(tmp[3]));
-        Edge e31(stoi(tmp[3]), stoi(tmp[1]));
-        result.edges.push_back(e12);
-        result.edges.push_back(e23);
-        result.edges.push_back(e31);
+        Indices indices(stoi(tmp[1]), stoi(tmp[2]), stoi(tmp[3]));
+        result.faces[i] = Face(indices, result.vertices[indices[0]].p, result.vertices[indices[1]].p, result.vertices[indices[2]].p);
     }
 
     cout << "\tRead all faces" << endl;

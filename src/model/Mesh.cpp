@@ -8,5 +8,4 @@ Mesh::Mesh(const Mesh &an)
 {
     faces = an.faces;
     vertices = an.vertices;
-    edges = an.edges;
 }

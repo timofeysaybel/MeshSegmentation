@@ -3,26 +3,27 @@
 //
 
 #include "../../include/model/Face.h"
+#include "../../include/util/Util.h"
 
 Face::Face(int v1, int v2, int v3)
 {
-    vertices[0] = v1;
-    vertices[1] = v2;
-    vertices[2] = v3;
+    indices.x = v1;
+    indices.y = v2;
+    indices.z = v3;
 }
 
 bool operator==(const Face &a, const Face &b)
 {
-    if (a.vertices[0] == b.vertices[0] && a.vertices[1] == b.vertices[1] && a.vertices[2] == b.vertices[2])
+    if (a.indices.x == b.indices.x && a.indices.y == b.indices.y && a.indices.z == b.indices.z)
         return true;
     return false;
 }
 
 Face::Face(const Face &an)
 {
-    vertices[0] = an.vertices[0];
-    vertices[1] = an.vertices[1];
-    vertices[2] = an.vertices[2];
+    indices.x = an.indices.x;
+    indices.y = an.indices.y;
+    indices.z = an.indices.z;
 
     for (auto& f : an.neighbors)
         neighbors.push_back(f);
@@ -30,4 +31,12 @@ Face::Face(const Face &an)
     normal = Point(an.normal);
 
     label = an.label;
+}
+
+Face::Face(Indices index, const Point& px, const Point& py, const Point& pz)
+{
+    indices = index;
+    center = (px + py + pz) / 3;
+    normal = util::cross(py - px, pz - px);
+    util::normalizeV(normal);
 }

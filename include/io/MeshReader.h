@@ -15,7 +15,6 @@ public:
 
     /** Reading <mesh>.off file and stores result in Mesh class */
     static Mesh readOff(const std::string& filename);
-
 };
 
 
