@@ -63,5 +63,5 @@ improved region growing](https://github.com/timofeysaybel/MeshSegmentation/files
   
   include(src)/segmentation: contains segmentation algorithms
   
-    include(src)/segmentation/fuzzyClusteringGraphCut: mesh decomposition using fuzzy clustering and cuts. Contains Flow (to solve Max Flow) and GraphMesh
+  include(src)/segmentation/fuzzyClusteringGraphCut: mesh decomposition using fuzzy clustering and cuts. Contains Flow (to solve Max Flow) and GraphMesh
     (extends Mesh)
