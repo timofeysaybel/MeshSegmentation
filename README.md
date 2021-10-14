@@ -38,7 +38,7 @@ References:
   3. Computing a fuzzy decomposition by refining the probability values using an iterative clustering scheme.
   4. Constructing the exact boundaries between the components, thus transforming the fuzzy decomposition into the final one.
 
-Computational complexity: O(F^2logF), F - faces.
+Computational complexity: O(F^2*logF), F - faces.
 
 ## Region growing
 
@@ -54,3 +54,14 @@ improved region growing](https://github.com/timofeysaybel/MeshSegmentation/files
 
 ### Algorithm
 
+## Project structure
+  include(src)/io: constains MeshReader, MeshWritter - read and write .off files
+  
+  include(src)/model: constains Point, Indices, Face, Vertex, Mesh - classes to work with mesh
+  
+  include(src)/util: contains util namespace - helper functions (dot, normalize, cross)
+  
+  include(src)/segmentation: contains segmentation algorithms
+  
+  include(src)/segmentation/fuzzyClusteringGraphCut: mesh decomposition using fuzzy clustering and cuts. Contains Flow (to solve Max Flow) and GraphMesh
+    (extends Mesh)
