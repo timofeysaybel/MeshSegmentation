@@ -17,7 +17,8 @@
 
 typedef std::pair<float, int> fipair;
 
-/** GraphMesh extends Mesh to decompose model using Fuzzy Clustering and Graph Cuts */
+/** GraphMesh extends Mesh to decompose model using Fuzzy Clustering and Graph Cuts
+ * Contains label in std::vector<int> partition */
 class GraphMesh : public Mesh
 {
 public:
