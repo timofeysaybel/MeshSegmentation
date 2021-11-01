@@ -67,7 +67,7 @@ improved region growing](https://github.com/timofeysaybel/MeshSegmentation/files
 
 ## Results
 
-
+![results](https://user-images.githubusercontent.com/64921559/139658202-0910d9a1-c224-47e8-89ad-631eeb8f2481.png)
 
 ## Project structure 
   _code/include(src)/io:_ constains MeshReader, MeshWritter - read and write .off files
