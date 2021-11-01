@@ -8,8 +8,6 @@
 
 using namespace std;
 
-vector<string> split(const string& s, const string& delimiter);
-
 Mesh MeshReader::readOff(const std::string& filename)
 {
     ifstream file(filename);
@@ -20,6 +18,7 @@ Mesh MeshReader::readOff(const std::string& filename)
         getline(file, line);
 
     cout << "\tRead the title" << endl;
+
     auto tmp = split(line, " ");
     int vSize = stoi(tmp[0]);
     int fSize = stoi(tmp[1]);
@@ -51,7 +50,7 @@ Mesh MeshReader::readOff(const std::string& filename)
     return result;
 }
 
-vector<string> split(const string& s, const string& delimiter)
+vector<string> MeshReader::split(const string& s, const string& delimiter)
 {
     size_t pos_start = 0, pos_end, delim_len = delimiter.length();
     string token;

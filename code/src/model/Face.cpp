@@ -19,6 +19,13 @@ bool operator==(const Face &a, const Face &b)
     return false;
 }
 
+bool operator<(const Face &a, const Face &b)
+{
+    if (a.indices.x < b.indices.x && a.indices.y < b.indices.y && a.indices.z < b.indices.z)
+        return true;
+    return false;
+}
+
 Face::Face(const Face &an)
 {
     indices.x = an.indices.x;

@@ -37,13 +37,14 @@ class Face
 public:
 
     Indices indices;
-    std::vector<Face> neighbors;
+    std::vector<Face*> neighbors;
     std::vector<DualEdge> dedges;  // Neighbor faces for Graph Cut
 
     Point normal;
     Point center;
 
     int label = 0;
+    bool marked = false;
 
     Face() = default;
 
@@ -54,6 +55,8 @@ public:
     Face(const Face &an);
 
     friend bool operator==(const Face &a, const Face &b);
+
+    friend bool operator<(const Face &a, const Face &b);
 };
 
 
